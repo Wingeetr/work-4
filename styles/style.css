@@ -1,0 +1,155 @@
+@font-face {
+    font-family: "Inter";
+    src: url("/Users/ntaia/Documents/учеба/s-chistogo-lista-main/fonts/interregular.woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+  font-family: "EB";
+  src: url("/Users/ntaia/Documents/учеба/s-chistogo-lista-main/fonts/ebgaramondregular.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #131313;
+  color: white;
+  width: 360px;
+  margin: 0 auto;
+}
+a {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+/*header*/
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.header {
+  padding: 24px 20px;
+}
+.header__logo-image {
+  width: 78.45px;
+  height: 15.43px;
+}
+.header__menu-item:nth-of-type(2){ /* выбор элемента */
+  padding: 12px 0;
+}
+.header__menu-item_active {
+  text-decoration: underline;/* подчеркивания к тексту */
+}
+/* cover */
+.cover {
+  margin-left: 20px;
+  background-image:url(cover.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0px;
+}
+.cover__title {
+  display: flex;
+  flex-direction: column;
+  color: #cccccc;
+  font-size: 60px;
+}
+
+.accent-span {
+  font-family: "EB";
+  font-weight: bold;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+/*intro*/
+.intro {
+  margin: 0 20px;
+  font-family: "intro";
+  font-size: 15px;
+}
+.intro__heading {
+  display: flex;
+  justify-content: space-between;
+  color:#6d6161;
+}
+.intro__main-text {
+  margin: 24px 0;
+}
+/*setion */
+.section {
+  padding: 0 20px;
+}
+.section_theme-yellow {
+  background-color: #FEE42A;
+  color: #000000;
+}
+.section_theme-black {
+  background-color: #131313;
+  color: #f5f5f5;
+}
+.content-section__subtitle {
+  display: flex;
+  flex-direction: column;
+}
+.content-section__introduction {
+  font-family: "inter";
+  margin: 32px 0;
+}
+.content-section__list-accent {
+  font-weight: bold;
+}
+.content-section__list-item {
+  padding: 8px 0;
+}
+/*card*/
+.card {
+  border-radius: 30px;
+  padding: 20px;
+  margin-bottom: 32px;
+}
+.card_theme-dark {
+  background-color:#343434;
+  color: #f5f5f5;
+}
+.card_theme-bright {
+  background-color: #FEE42A;
+  color: #000000;
+}
+.cards-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  margin-top: 32px;
+}
+.card__author {
+  display: flex;
+  flex-direction: column;
+}
+.card__author-photo {
+  width: 100px;
+  height: 100px;
+}
+.card__author-name {
+  font-weight: bold;
+  font-family: "inter";
+
+  margin-top: 8px;
+}
+.card__text {
+  margin-top: 8px;
+}
+/* foter */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid #FEE42A;
+  padding: 20px;
+}
+.footer-copy {
+  font-family: "Inter";
+}
